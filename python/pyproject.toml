@@ -1,0 +1,43 @@
+[project]
+name = "ai-waifu"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Matt Smart", email = "matt@robolabs.biz" },
+    { name = "Hasan Mukhlis", email = "hsnmkls@proton.me" }
+]
+dependencies = [
+    "chromadb>=0.4.22",
+    "langchain>=0.1.7",
+    "fastapi>=0.109.2",
+    "inquirer>=3.2.3",
+    "uvicorn[standard]>=0.27.1",
+    "eth_account>=0.11.0",
+    "web3>=6.15.1",
+    "python-jose>=3.3.0",
+    "transformers>=4.37.2",
+    "langchain_openai>=0.0.6",
+    "sentence-transformers>=2.3.1",
+    "ollama>=0.1.6",
+    "replicate>=0.24.0",
+    "sse-starlette>=2.0.0",
+]
+readme = "README.md"
+requires-python = ">= 3.10"
+
+[project.scripts]
+hello = "ai_waifu:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ai_waifu"]

@@ -1,0 +1,16 @@
+*.pyc
+.DS_Store
+db/chroma.sqlite3
+docs/
+db/
+chroma/
+.venv
+.vscode
+.env
+aiwaifus.sqlite
+simulation/logs.csv
+testLogs.json
+userLogs.json
+logs.json
+simulation/testLogs.csv
+personas.json
